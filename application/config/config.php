@@ -18,6 +18,17 @@ $config['base_url']	= '';
 
 /*
 |--------------------------------------------------------------------------
+| Path to the assets.
+| Leave blank to use the base_url/assets as the path.
+|--------------------------------------------------------------------------
+|
+| For example: http://static.example.com/assets/
+|
+*/
+$config['assets_path']  = '';
+
+/*
+|--------------------------------------------------------------------------
 | Index File
 |--------------------------------------------------------------------------
 |
@@ -26,7 +37,7 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -91,7 +102,7 @@ $config['charset'] = 'UTF-8';
 | setting this variable to TRUE (boolean).  See the user guide for details.
 |
 */
-$config['enable_hooks'] = FALSE;
+$config['enable_hooks'] = TRUE;
 
 
 /*
@@ -180,7 +191,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 0;
+$config['log_threshold'] = 1;
 
 /*
 |--------------------------------------------------------------------------
@@ -224,10 +235,10 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'Th!$gfaisA4s3cR3t';
 
 /*
-|--------------------------------------------------------------------------
+|----------------------------testing.modbase.be----------------------------------------------
 | Session Variables
 |--------------------------------------------------------------------------
 |
