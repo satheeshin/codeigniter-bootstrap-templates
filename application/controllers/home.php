@@ -15,6 +15,11 @@ class Home extends MY_Controller {
         $this->template->set('title', 'My website');
         $this->template->load('layouts/main', 'home');
     }
+	
+	public function ram() {
+        $this->template->set('title', 'My website');
+        $this->template->load('layouts/main', 'home');
+    }
 }
 
 /* End of file home.php */
